@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Mishra | UI/UX & Product Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for a clean, modern aesthetic */
+        :root {
+            --bg-color: #0f1115;
+            --surface-color: #1a1d24;
+            --primary-color: #6366f1;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+        }
+
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 32px 0;
+        }
+        
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 0;
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -1.5px;
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        /* Grid Sections */
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            font-weight: 600;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 16px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 100px;
+        }
+
+        .card {
+            background: var(--surface-color);
+            padding: 32px;
+            border-radius: var(--border-radius);
+            border: 1px solid #334155;
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Tags for Industries */
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 100px;
+        }
+
+        .tag {
+            background: rgba(99, 102, 241, 0.1);
+            color: #818cf8;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            border-top: 1px solid #334155;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">Aditya<span>.</span></div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Based in Mumbai
+            </div>
+        </nav>
+
+        <!-- Hero Intro -->
+        <header class="hero">
+            <h1>Crafting scalable <span>digital experiences.</span></h1>
+            <p>I'm <strong>Aditya Mishra</strong>, a UI/UX & Product Designer at Matracode Nexus. I balance meticulous user research with clean, aesthetic implementation to build high-performance interfaces.</p>
+        </header>
+
+        <!-- Approach & Skills -->
+        <section>
+            <h2 class="section-title">Design Approach</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Functional Strategy</h3>
+                    <p>Aligning business goals with user needs through comprehensive layout strategies and logical information architecture.</p>
+                </div>
+                <div class="card">
+                    <h3>Rapid Wireframing</h3>
+                    <p>Iterating quickly to map out user flows and structural layouts before diving into high-fidelity aesthetics.</p>
+                </div>
+                <div class="card">
+                    <h3>Interactive Prototyping</h3>
+                    <p>Bringing static designs to life to validate interactions, test usability, and ensure a seamless handoff to developers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries -->
+        <section>
+            <h2 class="section-title">Industry Expertise</h2>
+            <p style="color: var(--text-muted); margin-bottom: 24px;">Designing tailored, scalable design systems across specialized sectors:</p>
+            <div class="tags-container">
+                <div class="tag">Ed-Tech</div>
+                <div class="tag">Agri-Tech</div>
+                <div class="tag">Learning Management Systems (LMS)</div>
+                <div class="tag">Boutique Digital Products</div>
+                <div class="tag">Responsive Web Layouts</div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Aditya Mishra. Designed for performance and aesthetics.</p>
+        </footer>
+    </div>
+
+    <!-- Vanilla JS for simple entry animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card, .tag, .hero');
+            
+            cards.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, index * 100); // Staggered animation
+            });
+        });
+    </script>
+</body>
+</html>
